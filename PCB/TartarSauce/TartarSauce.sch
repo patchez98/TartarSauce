@@ -1,0 +1,1398 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L _MCU_Devboards:Teensy4.0 U1
+U 1 1 6010E172
+P 1800 1050
+F 0 "U1" H 2200 1215 50  0000 C CNN
+F 1 "Teensy4.0" H 2200 1150 50  0000 C CNN
+F 2 "_MCU_Devboards:Teensy4.0" H 1900 1150 50  0001 C CNN
+F 3 "" H 1900 1150 50  0001 C CNN
+	1    1800 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 60112490
+P 1550 1050
+F 0 "#PWR01" H 1550 800 50  0001 C CNN
+F 1 "GND" H 1400 1000 50  0000 C CNN
+F 2 "" H 1550 1050 50  0001 C CNN
+F 3 "" H 1550 1050 50  0001 C CNN
+	1    1550 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 60112D32
+P 2900 1100
+F 0 "#PWR09" H 2900 850 50  0001 C CNN
+F 1 "GND" H 3050 1050 50  0000 C CNN
+F 2 "" H 2900 1100 50  0001 C CNN
+F 3 "" H 2900 1100 50  0001 C CNN
+	1    2900 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J1
+U 1 1 6017745F
+P 5350 1350
+F 0 "J1" H 5430 1392 50  0000 L CNN
+F 1 "Thumbstick" H 5430 1301 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 5350 1350 50  0001 C CNN
+F 3 "~" H 5350 1350 50  0001 C CNN
+	1    5350 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR010
+U 1 1 60179B33
+P 2900 1350
+F 0 "#PWR010" H 2900 1200 50  0001 C CNN
+F 1 "+3V3" H 3050 1400 50  0000 C CNN
+F 2 "" H 2900 1350 50  0001 C CNN
+F 3 "" H 2900 1350 50  0001 C CNN
+	1    2900 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR017
+U 1 1 6017B5A4
+P 4900 1150
+F 0 "#PWR017" H 4900 1000 50  0001 C CNN
+F 1 "+3V3" H 5050 1200 50  0000 C CNN
+F 2 "" H 4900 1150 50  0001 C CNN
+F 3 "" H 4900 1150 50  0001 C CNN
+	1    4900 1150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 1150 5150 1150
+$Comp
+L power:GND #PWR018
+U 1 1 6017C670
+P 4900 1550
+F 0 "#PWR018" H 4900 1300 50  0001 C CNN
+F 1 "GND" H 5050 1500 50  0000 C CNN
+F 2 "" H 4900 1550 50  0001 C CNN
+F 3 "" H 4900 1550 50  0001 C CNN
+	1    4900 1550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 1550 5150 1550
+Text GLabel 5050 1250 0    50   Output ~ 0
+THUMB_VERT
+Text GLabel 5050 1350 0    50   Output ~ 0
+THUMB_HORI
+Text GLabel 5050 1450 0    50   Output ~ 0
+THUMB_L3
+Wire Wire Line
+	5050 1450 5150 1450
+Wire Wire Line
+	5150 1350 5050 1350
+Wire Wire Line
+	5050 1250 5150 1250
+Text Notes 1000 800  0    197  ~ 39
+Microcontroller
+Text Notes 4050 800  0    197  ~ 39
+Analog Stick
+Text Notes 6950 800  0    197  ~ 39
+OLED
+Wire Notes Line
+	450  2900 11250 2900
+$Comp
+L Connector_Generic:Conn_01x08 J2
+U 1 1 60180541
+P 7650 1350
+F 0 "J2" H 7730 1342 50  0000 L CNN
+F 1 "OLED" H 7730 1251 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 7650 1350 50  0001 C CNN
+F 3 "~" H 7650 1350 50  0001 C CNN
+	1    7650 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR026
+U 1 1 60181F20
+P 7150 1000
+F 0 "#PWR026" H 7150 750 50  0001 C CNN
+F 1 "GND" H 7300 950 50  0000 C CNN
+F 2 "" H 7150 1000 50  0001 C CNN
+F 3 "" H 7150 1000 50  0001 C CNN
+	1    7150 1000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 1000 7300 1000
+Wire Wire Line
+	7300 1000 7300 1050
+Wire Wire Line
+	7300 1050 7450 1050
+$Comp
+L power:+3V3 #PWR027
+U 1 1 6018305B
+P 7150 1250
+F 0 "#PWR027" H 7150 1100 50  0001 C CNN
+F 1 "+3V3" H 7300 1300 50  0000 C CNN
+F 2 "" H 7150 1250 50  0001 C CNN
+F 3 "" H 7150 1250 50  0001 C CNN
+	1    7150 1250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 1250 7450 1250
+Text GLabel 7350 1350 0    50   Output ~ 0
+OLED_DATA
+Text GLabel 7350 1450 0    50   Output ~ 0
+OLED_CLK
+Text GLabel 7350 1550 0    50   Output ~ 0
+OLED_D_C
+Text GLabel 7350 1650 0    50   Output ~ 0
+OLED_RST
+Text GLabel 7350 1750 0    50   Output ~ 0
+OLED_CS
+Wire Wire Line
+	7350 1350 7450 1350
+Wire Wire Line
+	7350 1450 7450 1450
+Wire Wire Line
+	7350 1550 7450 1550
+Wire Wire Line
+	7350 1650 7450 1650
+Wire Wire Line
+	7350 1750 7450 1750
+NoConn ~ 7450 1150
+$Comp
+L _MX_Alps_Hybrid:MX-LED MX1
+U 1 1 60C54217
+P 1350 3750
+F 0 "MX1" H 1432 3974 60  0000 C CNN
+F 1 "MX-LED" H 1432 3900 20  0000 C CNN
+F 2 "_MX_Only:MXOnly-1U" H 725 3725 60  0001 C CNN
+F 3 "" H 725 3725 60  0001 C CNN
+	1    1350 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 3750 1550 3750
+Entry Wire Line
+	1950 3550 2050 3450
+Wire Wire Line
+	1950 3550 1950 3700
+Wire Wire Line
+	1950 3700 1500 3700
+Text Label 1950 3550 2    50   ~ 0
+Col[0]
+Entry Wire Line
+	2950 3550 3050 3450
+Text Label 2950 3550 2    50   ~ 0
+Col[1]
+Entry Wire Line
+	3950 3550 4050 3450
+Text Label 3950 3550 2    50   ~ 0
+Col[2]
+Entry Wire Line
+	4950 3550 5050 3450
+Text Label 4950 3550 2    50   ~ 0
+Col[3]
+Entry Wire Line
+	5950 3550 6050 3450
+Text Label 5950 3550 2    50   ~ 0
+Col[4]
+Entry Wire Line
+	6950 3550 7050 3450
+Text Label 6950 3550 2    50   ~ 0
+Col[5]
+Entry Wire Line
+	700  4150 800  4050
+Wire Wire Line
+	1050 4050 800  4050
+Entry Wire Line
+	700  4750 800  4650
+Entry Wire Line
+	700  5350 800  5250
+Text Label 1000 4050 2    50   ~ 0
+Row[0]
+Text Label 1000 4650 2    50   ~ 0
+Row[1]
+Text Label 1000 5250 2    50   ~ 0
+Row[2]
+Text Notes 8650 800  0    197  ~ 39
+Backlight Driver
+$Comp
+L _Driver_LED:MIC4801 U2
+U 1 1 60D2C714
+P 9700 1050
+F 0 "U2" H 9675 1075 50  0000 C CNN
+F 1 "MIC4801" H 9675 984 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9700 1050 50  0001 C CNN
+F 3 "" H 9700 1050 50  0001 C CNN
+	1    9700 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR08
+U 1 1 60D46173
+P 2900 1050
+F 0 "#PWR08" H 2900 900 50  0001 C CNN
+F 1 "+5V" H 3000 1100 50  0000 C CNN
+F 2 "" H 2900 1050 50  0001 C CNN
+F 3 "" H 2900 1050 50  0001 C CNN
+	1    2900 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR028
+U 1 1 60D4F34B
+P 8700 1250
+F 0 "#PWR028" H 8700 1100 50  0001 C CNN
+F 1 "+5V" H 8715 1423 50  0000 C CNN
+F 2 "" H 8700 1250 50  0001 C CNN
+F 3 "" H 8700 1250 50  0001 C CNN
+	1    8700 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 1550 9350 1550
+$Comp
+L power:GND #PWR029
+U 1 1 60D60AE9
+P 9250 1650
+F 0 "#PWR029" H 9250 1400 50  0001 C CNN
+F 1 "GND" H 9255 1477 50  0000 C CNN
+F 2 "" H 9250 1650 50  0001 C CNN
+F 3 "" H 9250 1650 50  0001 C CNN
+	1    9250 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 1550 10050 1550
+Wire Wire Line
+	10050 1550 10050 1450
+Wire Wire Line
+	10050 1250 10000 1250
+Wire Wire Line
+	10000 1350 10050 1350
+Connection ~ 10050 1350
+Wire Wire Line
+	10050 1350 10050 1250
+Wire Wire Line
+	10000 1450 10050 1450
+Connection ~ 10050 1450
+Wire Wire Line
+	1350 3850 1350 4000
+$Comp
+L power:+5V #PWR02
+U 1 1 60D83C8F
+P 1650 3900
+F 0 "#PWR02" H 1650 3750 50  0001 C CNN
+F 1 "+5V" H 1650 4050 50  0000 C CNN
+F 2 "" H 1650 3900 50  0001 C CNN
+F 3 "" H 1650 3900 50  0001 C CNN
+	1    1650 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 3900 1650 3900
+Wire Wire Line
+	1550 3750 1550 3900
+$Comp
+L _MX_Alps_Hybrid:MX-LED MX2
+U 1 1 60D96D34
+P 1350 4350
+F 0 "MX2" H 1432 4574 60  0000 C CNN
+F 1 "MX-LED" H 1432 4500 20  0000 C CNN
+F 2 "_MX_Only:MXOnly-1U" H 725 4325 60  0001 C CNN
+F 3 "" H 725 4325 60  0001 C CNN
+	1    1350 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 4350 1550 4350
+Wire Wire Line
+	1950 4300 1500 4300
+Wire Wire Line
+	1350 4450 1350 4600
+$Comp
+L power:+5V #PWR03
+U 1 1 60D96D41
+P 1650 4500
+F 0 "#PWR03" H 1650 4350 50  0001 C CNN
+F 1 "+5V" H 1650 4650 50  0000 C CNN
+F 2 "" H 1650 4500 50  0001 C CNN
+F 3 "" H 1650 4500 50  0001 C CNN
+	1    1650 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 4500 1650 4500
+Wire Wire Line
+	1550 4350 1550 4500
+$Comp
+L _MX_Alps_Hybrid:MX-LED MX3
+U 1 1 60D99868
+P 1350 4950
+F 0 "MX3" H 1432 5174 60  0000 C CNN
+F 1 "MX-LED" H 1432 5100 20  0000 C CNN
+F 2 "_MX_Only:MXOnly-1U" H 725 4925 60  0001 C CNN
+F 3 "" H 725 4925 60  0001 C CNN
+	1    1350 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 4950 1550 4950
+Wire Wire Line
+	1950 4900 1500 4900
+Wire Wire Line
+	1350 5050 1350 5200
+$Comp
+L power:+5V #PWR04
+U 1 1 60D99875
+P 1650 5100
+F 0 "#PWR04" H 1650 4950 50  0001 C CNN
+F 1 "+5V" H 1650 5250 50  0000 C CNN
+F 2 "" H 1650 5100 50  0001 C CNN
+F 3 "" H 1650 5100 50  0001 C CNN
+	1    1650 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 5100 1650 5100
+Wire Wire Line
+	1550 4950 1550 5100
+Wire Wire Line
+	800  4650 1050 4650
+Wire Wire Line
+	800  5250 1050 5250
+Wire Wire Line
+	1950 3700 1950 4300
+Connection ~ 1950 3700
+Wire Wire Line
+	1950 4300 1950 4900
+Connection ~ 1950 4300
+$Comp
+L _MX_Alps_Hybrid:MX-LED MX4
+U 1 1 60DAD082
+P 2350 3750
+F 0 "MX4" H 2432 3974 60  0000 C CNN
+F 1 "MX-LED" H 2432 3900 20  0000 C CNN
+F 2 "_MX_Only:MXOnly-1U" H 1725 3725 60  0001 C CNN
+F 3 "" H 1725 3725 60  0001 C CNN
+	1    2350 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3750 2550 3750
+Wire Wire Line
+	2950 3550 2950 3700
+Wire Wire Line
+	2950 3700 2500 3700
+Wire Wire Line
+	2350 3850 2350 4000
+$Comp
+L power:+5V #PWR05
+U 1 1 60DAD090
+P 2650 3900
+F 0 "#PWR05" H 2650 3750 50  0001 C CNN
+F 1 "+5V" H 2650 4050 50  0000 C CNN
+F 2 "" H 2650 3900 50  0001 C CNN
+F 3 "" H 2650 3900 50  0001 C CNN
+	1    2650 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 3900 2650 3900
+Wire Wire Line
+	2550 3750 2550 3900
+$Comp
+L _MX_Alps_Hybrid:MX-LED MX5
+U 1 1 60DAD098
+P 2350 4350
+F 0 "MX5" H 2432 4574 60  0000 C CNN
+F 1 "MX-LED" H 2432 4500 20  0000 C CNN
+F 2 "_MX_Only:MXOnly-1U" H 1725 4325 60  0001 C CNN
+F 3 "" H 1725 4325 60  0001 C CNN
+	1    2350 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 4350 2550 4350
+Wire Wire Line
+	2950 4300 2500 4300
+Wire Wire Line
+	2350 4450 2350 4600
+$Comp
+L power:+5V #PWR06
+U 1 1 60DAD0A4
+P 2650 4500
+F 0 "#PWR06" H 2650 4350 50  0001 C CNN
+F 1 "+5V" H 2650 4650 50  0000 C CNN
+F 2 "" H 2650 4500 50  0001 C CNN
+F 3 "" H 2650 4500 50  0001 C CNN
+	1    2650 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 4500 2650 4500
+Wire Wire Line
+	2550 4350 2550 4500
+$Comp
+L _MX_Alps_Hybrid:MX-LED MX6
+U 1 1 60DAD0AC
+P 2350 4950
+F 0 "MX6" H 2432 5174 60  0000 C CNN
+F 1 "MX-LED" H 2432 5100 20  0000 C CNN
+F 2 "_MX_Only:MXOnly-1U" H 1725 4925 60  0001 C CNN
+F 3 "" H 1725 4925 60  0001 C CNN
+	1    2350 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 4950 2550 4950
+Wire Wire Line
+	2950 4900 2500 4900
+Wire Wire Line
+	2350 5050 2350 5200
+$Comp
+L power:+5V #PWR07
+U 1 1 60DAD0B8
+P 2650 5100
+F 0 "#PWR07" H 2650 4950 50  0001 C CNN
+F 1 "+5V" H 2650 5250 50  0000 C CNN
+F 2 "" H 2650 5100 50  0001 C CNN
+F 3 "" H 2650 5100 50  0001 C CNN
+	1    2650 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 5100 2650 5100
+Wire Wire Line
+	2550 4950 2550 5100
+Wire Wire Line
+	2950 3700 2950 4300
+Connection ~ 2950 3700
+Wire Wire Line
+	2950 4300 2950 4900
+Connection ~ 2950 4300
+$Comp
+L _MX_Alps_Hybrid:MX-LED MX7
+U 1 1 60DB5E40
+P 3350 3750
+F 0 "MX7" H 3432 3974 60  0000 C CNN
+F 1 "MX-LED" H 3432 3900 20  0000 C CNN
+F 2 "_MX_Only:MXOnly-1U" H 2725 3725 60  0001 C CNN
+F 3 "" H 2725 3725 60  0001 C CNN
+	1    3350 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3750 3550 3750
+Wire Wire Line
+	3950 3550 3950 3700
+Wire Wire Line
+	3950 3700 3500 3700
+Wire Wire Line
+	3350 3850 3350 4000
+$Comp
+L power:+5V #PWR011
+U 1 1 60DB5E4E
+P 3650 3900
+F 0 "#PWR011" H 3650 3750 50  0001 C CNN
+F 1 "+5V" H 3650 4050 50  0000 C CNN
+F 2 "" H 3650 3900 50  0001 C CNN
+F 3 "" H 3650 3900 50  0001 C CNN
+	1    3650 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3900 3650 3900
+Wire Wire Line
+	3550 3750 3550 3900
+$Comp
+L _MX_Alps_Hybrid:MX-LED MX8
+U 1 1 60DB5E56
+P 3350 4350
+F 0 "MX8" H 3432 4574 60  0000 C CNN
+F 1 "MX-LED" H 3432 4500 20  0000 C CNN
+F 2 "_MX_Only:MXOnly-1U" H 2725 4325 60  0001 C CNN
+F 3 "" H 2725 4325 60  0001 C CNN
+	1    3350 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 4350 3550 4350
+Wire Wire Line
+	3950 4300 3500 4300
+Wire Wire Line
+	3350 4450 3350 4600
+$Comp
+L power:+5V #PWR012
+U 1 1 60DB5E62
+P 3650 4500
+F 0 "#PWR012" H 3650 4350 50  0001 C CNN
+F 1 "+5V" H 3650 4650 50  0000 C CNN
+F 2 "" H 3650 4500 50  0001 C CNN
+F 3 "" H 3650 4500 50  0001 C CNN
+	1    3650 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 4500 3650 4500
+Wire Wire Line
+	3550 4350 3550 4500
+$Comp
+L _MX_Alps_Hybrid:MX-LED MX9
+U 1 1 60DB5E6A
+P 3350 4950
+F 0 "MX9" H 3432 5174 60  0000 C CNN
+F 1 "MX-LED" H 3432 5100 20  0000 C CNN
+F 2 "_MX_Only:MXOnly-1U" H 2725 4925 60  0001 C CNN
+F 3 "" H 2725 4925 60  0001 C CNN
+	1    3350 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 4950 3550 4950
+Wire Wire Line
+	3950 4900 3500 4900
+Wire Wire Line
+	3350 5050 3350 5200
+$Comp
+L power:+5V #PWR013
+U 1 1 60DB5E76
+P 3650 5100
+F 0 "#PWR013" H 3650 4950 50  0001 C CNN
+F 1 "+5V" H 3650 5250 50  0000 C CNN
+F 2 "" H 3650 5100 50  0001 C CNN
+F 3 "" H 3650 5100 50  0001 C CNN
+	1    3650 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 5100 3650 5100
+Wire Wire Line
+	3550 4950 3550 5100
+Wire Wire Line
+	3950 3700 3950 4300
+Connection ~ 3950 3700
+Wire Wire Line
+	3950 4300 3950 4900
+Connection ~ 3950 4300
+$Comp
+L _MX_Alps_Hybrid:MX-LED MX10
+U 1 1 60DBD5EA
+P 4350 3750
+F 0 "MX10" H 4432 3974 60  0000 C CNN
+F 1 "MX-LED" H 4432 3900 20  0000 C CNN
+F 2 "_MX_Only:MXOnly-1U" H 3725 3725 60  0001 C CNN
+F 3 "" H 3725 3725 60  0001 C CNN
+	1    4350 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3750 4550 3750
+Wire Wire Line
+	4950 3550 4950 3700
+Wire Wire Line
+	4950 3700 4500 3700
+Wire Wire Line
+	4350 3850 4350 4000
+$Comp
+L power:+5V #PWR014
+U 1 1 60DBD5F8
+P 4650 3900
+F 0 "#PWR014" H 4650 3750 50  0001 C CNN
+F 1 "+5V" H 4650 4050 50  0000 C CNN
+F 2 "" H 4650 3900 50  0001 C CNN
+F 3 "" H 4650 3900 50  0001 C CNN
+	1    4650 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3900 4650 3900
+Wire Wire Line
+	4550 3750 4550 3900
+$Comp
+L _MX_Alps_Hybrid:MX-LED MX11
+U 1 1 60DBD600
+P 4350 4350
+F 0 "MX11" H 4432 4574 60  0000 C CNN
+F 1 "MX-LED" H 4432 4500 20  0000 C CNN
+F 2 "_MX_Only:MXOnly-1U" H 3725 4325 60  0001 C CNN
+F 3 "" H 3725 4325 60  0001 C CNN
+	1    4350 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4350 4550 4350
+Wire Wire Line
+	4950 4300 4500 4300
+Wire Wire Line
+	4350 4450 4350 4600
+$Comp
+L power:+5V #PWR015
+U 1 1 60DBD60C
+P 4650 4500
+F 0 "#PWR015" H 4650 4350 50  0001 C CNN
+F 1 "+5V" H 4650 4650 50  0000 C CNN
+F 2 "" H 4650 4500 50  0001 C CNN
+F 3 "" H 4650 4500 50  0001 C CNN
+	1    4650 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 4500 4650 4500
+Wire Wire Line
+	4550 4350 4550 4500
+$Comp
+L _MX_Alps_Hybrid:MX-LED MX12
+U 1 1 60DBD614
+P 4350 4950
+F 0 "MX12" H 4432 5174 60  0000 C CNN
+F 1 "MX-LED" H 4432 5100 20  0000 C CNN
+F 2 "_MX_Only:MXOnly-1U" H 3725 4925 60  0001 C CNN
+F 3 "" H 3725 4925 60  0001 C CNN
+	1    4350 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4950 4550 4950
+Wire Wire Line
+	4950 4900 4500 4900
+Wire Wire Line
+	4350 5050 4350 5200
+$Comp
+L power:+5V #PWR016
+U 1 1 60DBD620
+P 4650 5100
+F 0 "#PWR016" H 4650 4950 50  0001 C CNN
+F 1 "+5V" H 4650 5250 50  0000 C CNN
+F 2 "" H 4650 5100 50  0001 C CNN
+F 3 "" H 4650 5100 50  0001 C CNN
+	1    4650 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 5100 4650 5100
+Wire Wire Line
+	4550 4950 4550 5100
+Wire Wire Line
+	4950 3700 4950 4300
+Connection ~ 4950 3700
+Wire Wire Line
+	4950 4300 4950 4900
+Connection ~ 4950 4300
+$Comp
+L _MX_Alps_Hybrid:MX-LED MX13
+U 1 1 60DC5131
+P 5350 3750
+F 0 "MX13" H 5432 3974 60  0000 C CNN
+F 1 "MX-LED" H 5432 3900 20  0000 C CNN
+F 2 "_MX_Only:MXOnly-1U" H 4725 3725 60  0001 C CNN
+F 3 "" H 4725 3725 60  0001 C CNN
+	1    5350 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 3750 5550 3750
+Wire Wire Line
+	5950 3550 5950 3700
+Wire Wire Line
+	5950 3700 5500 3700
+Wire Wire Line
+	5350 3850 5350 4000
+$Comp
+L power:+5V #PWR019
+U 1 1 60DC513F
+P 5650 3900
+F 0 "#PWR019" H 5650 3750 50  0001 C CNN
+F 1 "+5V" H 5650 4050 50  0000 C CNN
+F 2 "" H 5650 3900 50  0001 C CNN
+F 3 "" H 5650 3900 50  0001 C CNN
+	1    5650 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 3900 5650 3900
+Wire Wire Line
+	5550 3750 5550 3900
+$Comp
+L _MX_Alps_Hybrid:MX-LED MX14
+U 1 1 60DC5147
+P 5350 4350
+F 0 "MX14" H 5432 4574 60  0000 C CNN
+F 1 "MX-LED" H 5432 4500 20  0000 C CNN
+F 2 "_MX_Only:MXOnly-1U" H 4725 4325 60  0001 C CNN
+F 3 "" H 4725 4325 60  0001 C CNN
+	1    5350 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4350 5550 4350
+Wire Wire Line
+	5950 4300 5500 4300
+Wire Wire Line
+	5350 4450 5350 4600
+$Comp
+L power:+5V #PWR020
+U 1 1 60DC5153
+P 5650 4500
+F 0 "#PWR020" H 5650 4350 50  0001 C CNN
+F 1 "+5V" H 5650 4650 50  0000 C CNN
+F 2 "" H 5650 4500 50  0001 C CNN
+F 3 "" H 5650 4500 50  0001 C CNN
+	1    5650 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 4500 5650 4500
+Wire Wire Line
+	5550 4350 5550 4500
+$Comp
+L _MX_Alps_Hybrid:MX-LED MX15
+U 1 1 60DC515B
+P 5350 4950
+F 0 "MX15" H 5432 5174 60  0000 C CNN
+F 1 "MX-LED" H 5432 5100 20  0000 C CNN
+F 2 "_MX_Only:MXOnly-1U" H 4725 4925 60  0001 C CNN
+F 3 "" H 4725 4925 60  0001 C CNN
+	1    5350 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4950 5550 4950
+Wire Wire Line
+	5950 4900 5500 4900
+Wire Wire Line
+	5350 5050 5350 5200
+$Comp
+L power:+5V #PWR021
+U 1 1 60DC5167
+P 5650 5100
+F 0 "#PWR021" H 5650 4950 50  0001 C CNN
+F 1 "+5V" H 5650 5250 50  0000 C CNN
+F 2 "" H 5650 5100 50  0001 C CNN
+F 3 "" H 5650 5100 50  0001 C CNN
+	1    5650 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 5100 5650 5100
+Wire Wire Line
+	5550 4950 5550 5100
+Wire Wire Line
+	5950 3700 5950 4300
+Connection ~ 5950 3700
+Wire Wire Line
+	5950 4300 5950 4900
+Connection ~ 5950 4300
+$Comp
+L _MX_Alps_Hybrid:MX-LED MX18
+U 1 1 60DD03F0
+P 6350 4950
+F 0 "MX18" H 6432 5174 60  0000 C CNN
+F 1 "MX-LED" H 6432 5100 20  0000 C CNN
+F 2 "_MX_Only:MXOnly-1U" H 5725 4925 60  0001 C CNN
+F 3 "" H 5725 4925 60  0001 C CNN
+	1    6350 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 4950 6550 4950
+Wire Wire Line
+	6950 4900 6500 4900
+Wire Wire Line
+	6350 5050 6350 5200
+$Comp
+L power:+5V #PWR024
+U 1 1 60DD03FC
+P 6650 5100
+F 0 "#PWR024" H 6650 4950 50  0001 C CNN
+F 1 "+5V" H 6650 5250 50  0000 C CNN
+F 2 "" H 6650 5100 50  0001 C CNN
+F 3 "" H 6650 5100 50  0001 C CNN
+	1    6650 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 5100 6650 5100
+Wire Wire Line
+	6550 4950 6550 5100
+$Comp
+L Device:C_Small C1
+U 1 1 60EA0700
+P 8800 1350
+F 0 "C1" H 8708 1304 50  0000 R CNN
+F 1 "2.2u" H 8708 1395 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8800 1350 50  0001 C CNN
+F 3 "~" H 8800 1350 50  0001 C CNN
+	1    8800 1350
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8700 1250 8800 1250
+Wire Wire Line
+	8800 1250 9350 1250
+Connection ~ 8800 1250
+$Comp
+L Device:R_Small R1
+U 1 1 60CDFBAA
+P 9100 1550
+F 0 "R1" H 9041 1504 50  0000 R CNN
+F 1 "16k" H 9041 1595 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 9100 1550 50  0001 C CNN
+F 3 "~" H 9100 1550 50  0001 C CNN
+	1    9100 1550
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9250 1550 9250 1650
+Connection ~ 9250 1650
+Wire Wire Line
+	8800 1650 8800 1450
+Wire Wire Line
+	8800 1650 9100 1650
+Connection ~ 9100 1650
+Wire Wire Line
+	9100 1450 9350 1450
+Wire Wire Line
+	9100 1650 9250 1650
+Wire Wire Line
+	1700 1150 1700 1050
+Wire Wire Line
+	1700 1050 1550 1050
+Text GLabel 2900 1450 2    50   Input ~ 0
+THUMB_VERT
+Text GLabel 2900 1550 2    50   Input ~ 0
+THUMB_HORI
+Text GLabel 2900 1650 2    50   Input ~ 0
+THUMB_L3
+Wire Wire Line
+	2700 1450 2900 1450
+Wire Wire Line
+	2700 1550 2900 1550
+Wire Wire Line
+	2700 1650 2900 1650
+Text GLabel 1550 1650 0    50   Output ~ 0
+OLED_DATA
+Text GLabel 1550 1550 0    50   Output ~ 0
+OLED_CLK
+Text GLabel 1550 1450 0    50   Output ~ 0
+OLED_D_C
+Text GLabel 1550 1350 0    50   Output ~ 0
+OLED_RST
+Text GLabel 1550 1250 0    50   Output ~ 0
+OLED_CS
+Wire Wire Line
+	1550 1250 1700 1250
+Wire Wire Line
+	1550 1350 1700 1350
+Wire Wire Line
+	1550 1450 1700 1450
+Wire Wire Line
+	1550 1550 1700 1550
+Wire Wire Line
+	1550 1650 1700 1650
+Wire Wire Line
+	1700 1950 1200 1950
+Wire Wire Line
+	1700 2050 1200 2050
+Wire Wire Line
+	1700 2150 1200 2150
+Wire Wire Line
+	1700 2250 1200 2250
+Wire Wire Line
+	1700 2350 1200 2350
+Wire Wire Line
+	1700 2450 1200 2450
+Text Label 1200 2350 0    50   ~ 0
+Col[0]
+Text Label 1200 2250 0    50   ~ 0
+Col[1]
+Text Label 1200 2150 0    50   ~ 0
+Col[2]
+Text Label 1200 2050 0    50   ~ 0
+Col[3]
+Text Label 1200 1950 0    50   ~ 0
+Col[4]
+Text Label 1200 2450 0    50   ~ 0
+Col[5]
+Wire Wire Line
+	2700 2450 3200 2450
+Text Label 3200 2450 2    50   ~ 0
+Row[2]
+Wire Wire Line
+	2700 2350 3200 2350
+Text Label 3200 2350 2    50   ~ 0
+Row[1]
+Wire Wire Line
+	2700 2250 3200 2250
+Text Label 3200 2250 2    50   ~ 0
+Row[0]
+NoConn ~ 1700 1750
+NoConn ~ 2700 2050
+Wire Wire Line
+	2700 1350 2900 1350
+Wire Wire Line
+	2700 1250 2800 1250
+Wire Wire Line
+	2800 1250 2800 1100
+Wire Wire Line
+	2800 1100 2900 1100
+Wire Wire Line
+	2700 1150 2700 1050
+Wire Wire Line
+	2700 1050 2900 1050
+NoConn ~ 2700 2150
+$Comp
+L Device:D_Small_ALT D1
+U 1 1 60ED3895
+P 1150 3900
+F 0 "D1" H 1150 4100 50  0000 C CNN
+F 1 "D" H 1150 4000 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 1150 3900 50  0001 C CNN
+F 3 "~" V 1150 3900 50  0001 C CNN
+	1    1150 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 3900 1300 3900
+Wire Wire Line
+	1050 3900 1050 4050
+$Comp
+L Device:D_Small_ALT D2
+U 1 1 60EE0E53
+P 1150 4500
+F 0 "D2" H 1150 4700 50  0000 C CNN
+F 1 "D" H 1150 4600 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 1150 4500 50  0001 C CNN
+F 3 "~" V 1150 4500 50  0001 C CNN
+	1    1150 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 4500 1300 4500
+Wire Wire Line
+	1050 4500 1050 4650
+$Comp
+L Device:D_Small_ALT D3
+U 1 1 60EEEA00
+P 1150 5100
+F 0 "D3" H 1150 5300 50  0000 C CNN
+F 1 "D" H 1150 5200 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 1150 5100 50  0001 C CNN
+F 3 "~" V 1150 5100 50  0001 C CNN
+	1    1150 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 5100 1300 5100
+Wire Wire Line
+	1050 5100 1050 5250
+$Comp
+L Device:D_Small_ALT D4
+U 1 1 60F5D5A4
+P 2150 3900
+F 0 "D4" H 2150 4100 50  0000 C CNN
+F 1 "D" H 2150 4000 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 2150 3900 50  0001 C CNN
+F 3 "~" V 2150 3900 50  0001 C CNN
+	1    2150 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 3900 2300 3900
+Wire Wire Line
+	2050 3900 2050 4050
+$Comp
+L Device:D_Small_ALT D5
+U 1 1 60F695FC
+P 2150 4500
+F 0 "D5" H 2150 4700 50  0000 C CNN
+F 1 "D" H 2150 4600 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 2150 4500 50  0001 C CNN
+F 3 "~" V 2150 4500 50  0001 C CNN
+	1    2150 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 4500 2300 4500
+Wire Wire Line
+	2050 4500 2050 4650
+$Comp
+L Device:D_Small_ALT D6
+U 1 1 60F75B9E
+P 2150 5100
+F 0 "D6" H 2150 5300 50  0000 C CNN
+F 1 "D" H 2150 5200 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 2150 5100 50  0001 C CNN
+F 3 "~" V 2150 5100 50  0001 C CNN
+	1    2150 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 5100 2300 5100
+Wire Wire Line
+	2050 5100 2050 5250
+$Comp
+L Device:D_Small_ALT D7
+U 1 1 60F96FED
+P 3150 3900
+F 0 "D7" H 3150 4100 50  0000 C CNN
+F 1 "D" H 3150 4000 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 3150 3900 50  0001 C CNN
+F 3 "~" V 3150 3900 50  0001 C CNN
+	1    3150 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 3900 3300 3900
+Wire Wire Line
+	3050 3900 3050 4050
+$Comp
+L Device:D_Small_ALT D8
+U 1 1 60FA3A40
+P 3150 4500
+F 0 "D8" H 3150 4700 50  0000 C CNN
+F 1 "D" H 3150 4600 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 3150 4500 50  0001 C CNN
+F 3 "~" V 3150 4500 50  0001 C CNN
+	1    3150 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 4500 3300 4500
+Wire Wire Line
+	3050 4500 3050 4650
+$Comp
+L Device:D_Small_ALT D9
+U 1 1 60FB083A
+P 3150 5100
+F 0 "D9" H 3150 5300 50  0000 C CNN
+F 1 "D" H 3150 5200 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 3150 5100 50  0001 C CNN
+F 3 "~" V 3150 5100 50  0001 C CNN
+	1    3150 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 5100 3300 5100
+Wire Wire Line
+	3050 5100 3050 5250
+$Comp
+L Device:D_Small_ALT D10
+U 1 1 60FCCD2D
+P 4150 3900
+F 0 "D10" H 4150 4100 50  0000 C CNN
+F 1 "D" H 4150 4000 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 4150 3900 50  0001 C CNN
+F 3 "~" V 4150 3900 50  0001 C CNN
+	1    4150 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3900 4300 3900
+Wire Wire Line
+	4050 3900 4050 4050
+$Comp
+L Device:D_Small_ALT D11
+U 1 1 60FDA8CF
+P 4150 4500
+F 0 "D11" H 4150 4700 50  0000 C CNN
+F 1 "D" H 4150 4600 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 4150 4500 50  0001 C CNN
+F 3 "~" V 4150 4500 50  0001 C CNN
+	1    4150 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 4500 4300 4500
+Wire Wire Line
+	4050 4500 4050 4650
+$Comp
+L Device:D_Small_ALT D12
+U 1 1 60FE8A49
+P 4150 5100
+F 0 "D12" H 4150 5300 50  0000 C CNN
+F 1 "D" H 4150 5200 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 4150 5100 50  0001 C CNN
+F 3 "~" V 4150 5100 50  0001 C CNN
+	1    4150 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 5100 4300 5100
+Wire Wire Line
+	4050 5100 4050 5250
+$Comp
+L Device:D_Small_ALT D13
+U 1 1 61006044
+P 5150 3900
+F 0 "D13" H 5150 4100 50  0000 C CNN
+F 1 "D" H 5150 4000 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 5150 3900 50  0001 C CNN
+F 3 "~" V 5150 3900 50  0001 C CNN
+	1    5150 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3900 5300 3900
+Wire Wire Line
+	5050 3900 5050 4050
+$Comp
+L Device:D_Small_ALT D14
+U 1 1 61014EE2
+P 5150 4500
+F 0 "D14" H 5150 4700 50  0000 C CNN
+F 1 "D" H 5150 4600 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 5150 4500 50  0001 C CNN
+F 3 "~" V 5150 4500 50  0001 C CNN
+	1    5150 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 4500 5300 4500
+Wire Wire Line
+	5050 4500 5050 4650
+$Comp
+L Device:D_Small_ALT D15
+U 1 1 610241FF
+P 5150 5100
+F 0 "D15" H 5150 5300 50  0000 C CNN
+F 1 "D" H 5150 5200 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 5150 5100 50  0001 C CNN
+F 3 "~" V 5150 5100 50  0001 C CNN
+	1    5150 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 5100 5300 5100
+Wire Wire Line
+	5050 5100 5050 5250
+Wire Wire Line
+	5050 4050 4050 4050
+Connection ~ 4050 4050
+Wire Wire Line
+	3050 4050 4050 4050
+Connection ~ 3050 4050
+Wire Wire Line
+	3050 4650 4050 4650
+Connection ~ 3050 4650
+Wire Wire Line
+	3050 5250 4050 5250
+Connection ~ 3050 5250
+Wire Wire Line
+	4050 5250 5050 5250
+Connection ~ 4050 5250
+Wire Wire Line
+	4050 4650 5050 4650
+Connection ~ 4050 4650
+Wire Wire Line
+	2050 4050 3050 4050
+Connection ~ 2050 4050
+Wire Wire Line
+	2050 4650 3050 4650
+Connection ~ 2050 4650
+Wire Wire Line
+	2050 5250 3050 5250
+Connection ~ 2050 5250
+Wire Wire Line
+	1050 5250 2050 5250
+Connection ~ 1050 5250
+Wire Wire Line
+	1050 4650 2050 4650
+Connection ~ 1050 4650
+Wire Wire Line
+	1050 4050 2050 4050
+Connection ~ 1050 4050
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 611451BE
+P 9950 3700
+F 0 "J3" H 10030 3692 50  0000 L CNN
+F 1 "Conn_01x02" H 10030 3601 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9950 3700 50  0001 C CNN
+F 3 "~" H 9950 3700 50  0001 C CNN
+	1    9950 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 6114A0D6
+P 9950 4150
+F 0 "J4" H 10030 4142 50  0000 L CNN
+F 1 "Conn_01x02" H 10030 4051 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9950 4150 50  0001 C CNN
+F 3 "~" H 9950 4150 50  0001 C CNN
+	1    9950 4150
+	1    0    0    -1  
+$EndComp
+Text Notes 8650 3350 0    197  ~ 39
+Misc. Switches
+Text GLabel 2900 1750 2    50   Input ~ 0
+MISC_0
+Wire Wire Line
+	2700 1750 2900 1750
+Text GLabel 2900 1850 2    50   Input ~ 0
+MISC_1
+Wire Wire Line
+	2700 1850 2900 1850
+Text GLabel 2900 1950 2    50   Output ~ 0
+LED_EN
+Wire Wire Line
+	2700 1950 2900 1950
+Text GLabel 9250 1350 0    50   Input ~ 0
+LED_EN
+Wire Wire Line
+	9250 1350 9350 1350
+Text GLabel 10100 1250 2    50   Input ~ 0
+LED_CAT
+Wire Wire Line
+	10100 1250 10050 1250
+Connection ~ 10050 1250
+Wire Wire Line
+	10050 1350 10050 1450
+Text GLabel 5400 4000 2    50   Output ~ 0
+LED_CAT
+Wire Wire Line
+	5400 4000 5350 4000
+Text GLabel 5400 4600 2    50   Output ~ 0
+LED_CAT
+Wire Wire Line
+	5400 4600 5350 4600
+Text GLabel 5400 5200 2    50   Output ~ 0
+LED_CAT
+Wire Wire Line
+	5400 5200 5350 5200
+Text GLabel 6400 5200 2    50   Output ~ 0
+LED_CAT
+Wire Wire Line
+	6400 5200 6350 5200
+Text GLabel 4400 5200 2    50   Output ~ 0
+LED_CAT
+Wire Wire Line
+	4400 5200 4350 5200
+Text GLabel 4400 4600 2    50   Output ~ 0
+LED_CAT
+Wire Wire Line
+	4400 4600 4350 4600
+Text GLabel 4400 4000 2    50   Output ~ 0
+LED_CAT
+Wire Wire Line
+	4400 4000 4350 4000
+Text GLabel 3400 4000 2    50   Output ~ 0
+LED_CAT
+Wire Wire Line
+	3400 4000 3350 4000
+Text GLabel 3400 4600 2    50   Output ~ 0
+LED_CAT
+Wire Wire Line
+	3400 4600 3350 4600
+Text GLabel 3400 5200 2    50   Output ~ 0
+LED_CAT
+Wire Wire Line
+	3400 5200 3350 5200
+Text GLabel 2400 5200 2    50   Output ~ 0
+LED_CAT
+Wire Wire Line
+	2400 5200 2350 5200
+Text GLabel 2400 4600 2    50   Output ~ 0
+LED_CAT
+Wire Wire Line
+	2400 4600 2350 4600
+Text GLabel 2400 4000 2    50   Output ~ 0
+LED_CAT
+Wire Wire Line
+	2400 4000 2350 4000
+Text GLabel 1400 4000 2    50   Output ~ 0
+LED_CAT
+Wire Wire Line
+	1400 4000 1350 4000
+Text GLabel 1400 4600 2    50   Output ~ 0
+LED_CAT
+Wire Wire Line
+	1400 4600 1350 4600
+Text GLabel 1400 5200 2    50   Output ~ 0
+LED_CAT
+Wire Wire Line
+	1400 5200 1350 5200
+Text GLabel 9650 3700 0    50   Output ~ 0
+MISC_0
+Text GLabel 9650 4150 0    50   Output ~ 0
+MISC_1
+Wire Wire Line
+	9650 3700 9750 3700
+Wire Wire Line
+	9750 4150 9650 4150
+Wire Wire Line
+	9750 3800 9650 3800
+Wire Wire Line
+	9750 4250 9650 4250
+$Comp
+L power:GND #PWR022
+U 1 1 6137407A
+P 9650 3800
+F 0 "#PWR022" H 9650 3550 50  0001 C CNN
+F 1 "GND" H 9655 3627 50  0000 C CNN
+F 2 "" H 9650 3800 50  0001 C CNN
+F 3 "" H 9650 3800 50  0001 C CNN
+	1    9650 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR025
+U 1 1 613745BD
+P 9650 4250
+F 0 "#PWR025" H 9650 4000 50  0001 C CNN
+F 1 "GND" H 9655 4077 50  0000 C CNN
+F 2 "" H 9650 4250 50  0001 C CNN
+F 3 "" H 9650 4250 50  0001 C CNN
+	1    9650 4250
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	8450 2900 8450 4750
+Wire Notes Line
+	8450 4750 11250 4750
+$Comp
+L Device:D_Small_ALT D17
+U 1 1 613A890F
+P 6150 5100
+F 0 "D17" H 6150 5300 50  0000 C CNN
+F 1 "D" H 6150 5200 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" V 6150 5100 50  0001 C CNN
+F 3 "~" V 6150 5100 50  0001 C CNN
+	1    6150 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 5100 6300 5100
+Wire Wire Line
+	6050 5100 6050 5250
+Wire Wire Line
+	6050 5250 5050 5250
+Connection ~ 5050 5250
+Text Notes 2850 3350 0    197  ~ 39
+Switches
+NoConn ~ 1700 1850
+Wire Wire Line
+	6950 3550 6950 4900
+Wire Bus Line
+	700  4150 700  5350
+Wire Bus Line
+	2050 3450 7050 3450
+$EndSCHEMATC
