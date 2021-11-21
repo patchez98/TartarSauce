@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Program Files (x86)/Arduino/hardware/teensy/avr/libraries/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "msvc-x64",
+            "browse": {
+                "limitSymbolsToIncludedHeaders": false,
+                "path": [
+                    "C:\\Users\\patch\\OneDrive\\Documents\\Arduino\\libraries\\Adafruit_BusIO",
+                    "C:\\Users\\patch\\OneDrive\\Documents\\Arduino\\libraries\\Adafruit_GFX_Library",
+                    "C:\\Users\\patch\\OneDrive\\Documents\\Arduino\\libraries\\Adafruit_SSD1306"
+                ]
+            }
+        }
+    ],
+    "version": 4
+}

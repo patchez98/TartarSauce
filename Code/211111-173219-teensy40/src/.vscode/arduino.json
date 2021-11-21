@@ -1,0 +1,8 @@
+  {
+    "sketch": "TartarSauce.ino",
+    "port": "COM4",
+    "board": "Teensyduino:Teensy 4.0",
+    "output": "../build",
+    "debugger": "jlink",
+    "prebuild": "bash prebuild.sh"
+}

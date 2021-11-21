@@ -1,4 +1,4 @@
-19218583391778074
+19226720372593397
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83027,6 +83027,34 @@ varistor SIOV
 2
 2
 _Connectors
+01x02_MillMax_Springloaded_Pad
+
+
+0
+2
+2
+_Connectors
+01x02_MillMax_Springloaded_Pin
+
+
+0
+2
+2
+_Connectors
+01x03_MillMax_Springloaded_Pad
+
+
+0
+3
+3
+_Connectors
+01x03_MillMax_Springloaded_Pin
+
+
+0
+3
+3
+_Connectors
 USB_C_GCT_USB4085
 
 
@@ -83621,3 +83649,10 @@ MXOnly-LEDONLY-FLIPPED
 0
 2
 2
+_Silkscreens
+YoRHa
+
+
+0
+0
+0
