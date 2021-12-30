@@ -22,5 +22,7 @@ void profile_init();
 void profile_switch(uint8_t new_pro);
 // reads pressed keys and sends keystrokes as needed
 void profile_send_keys();
+// reads and sends joystick values; reads pressed L3 and sends as necessary
+void profile_send_joystick();
 
 #endif

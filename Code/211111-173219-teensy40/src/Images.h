@@ -3,10 +3,11 @@
 
 #include <stdint.h>
 
+// total bytes, essentially L x W / 8
 #define IMG_SIZE 512
 
 // NOTE: Must ensure there are at least as many images as profiles
-static const uint8_t PROGMEM img[][IMG_SIZE] = 
+const uint8_t PROGMEM img[][IMG_SIZE] = 
 {
   // Profile 1 image (Some Bee movie script part)
   {

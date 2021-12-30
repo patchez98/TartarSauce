@@ -1,59 +1,39 @@
+#include <Arduino.h>
 #include "board.h"
 #include "Profile.h"
 
-// NOTE: Must ensure there are at least as many images as profiles
+// NOTE: Must ensure there are at least as many images in Images.h as profiles
 #define NUM_PROFILES 4
 
-//Only define these once for speed
-static uint16_t vert;
-static uint16_t hori;
+// Used for setting polling rate
+elapsedMicros poll_timer = 0;
 
-void setup() {
+void setup() 
+{
   // Test for PROGMEM stuff
-  Serial.begin(9600);
-  while(!Serial);
-  delay(2000);
+  //Serial.begin(9600);
+  //while(!Serial);
+  //delay(2000);
   
-  // put your setup code here, to run once:
+  // Pin initialization
+  digitalWrite(LED_PIN, LOW);
   pinMode(LED_PIN, OUTPUT);
-  pinMode(X_PIN, INPUT);
-  pinMode(Y_PIN, INPUT);
-  pinMode(L3_PIN, INPUT_PULLUP);
-  for (int i = 0; i < NUM_ROWS; i++)
-  {
-    pinMode(i, INPUT_PULLDOWN);
-  }
-  for (int i = 0; i < NUM_COLS; i++)
-  { 
-    digitalWrite(i, LOW);
-    pinMode(i, OUTPUT);
-  }
-  //
+  // Turn on LEDs
   analogWrite(LED_PIN, PWM_DUTY * 256);
+
+  // Initialize keymap and LED
+  profile_init();
 }
 
-void loop() {
-  /*
-  //Read and update analog values
-  //Vertical (Y) axis
-  vert = analogRead(Y_PIN);
-  Joystick.Y(vert);
-  //Horizontal (X) axis
-  hori = analogRead(X_PIN);
-  Joystick.X(hori);
-  //L3
-  Joystick.button(1, !digitalRead(L3_PIN));
-  
-  //Detect keypresses
-  for(int i=0; i < NUM_COLS; i++)
+void loop() 
+{
+  if(poll_timer >= POLLING_US)
   {
-    digitalWrite(col_pins[i], HIGH);
-    for(int j=0; j < NUM_ROWS; j++)
-    {
-
-      digitalRead(row_pins[j]);
-    }
+    poll_timer = 0;
+    
+    // Check joystick and send values
+    profile_send_joystick();
+    // Check keyswitches and send values as necessary
+    profile_send_keys();
   }
-  */
-  
 }

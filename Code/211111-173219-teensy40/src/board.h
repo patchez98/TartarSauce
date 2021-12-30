@@ -6,8 +6,9 @@
 // Board specifications
 #define NUM_ROWS 3
 #define NUM_COLS 6
-#define PWM_DUTY 0.05
-
+#define PWM_DUTY 0.15
+#define POLLING_HZ 500   // Polling rate of keyboard, in Hz
+#define POLLING_US 1000000 / POLLING_HZ
 
 // **** Pin Definitions ****
 // LED driver
@@ -16,6 +17,9 @@
 #define Y_PIN 23
 #define X_PIN 22
 #define L3_PIN 21
+// General-purpose switches
+#define SW0_PIN 20
+#define SW1_PIN 19
 // Switch matrix row pins (top->bottom)
 #define R0_PIN 15
 #define R1_PIN 14
