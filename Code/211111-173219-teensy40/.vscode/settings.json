@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "keyboard.h": "c",
-        "usb_keyboard.h": "c"
+        "usb_keyboard.h": "c",
+        "keylayouts.h": "c"
     }
 }
